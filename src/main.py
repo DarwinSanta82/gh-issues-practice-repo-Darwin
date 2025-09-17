@@ -1,9 +1,9 @@
 import pandas as pd
 from pathlib import Path
-from .ventas import calcular_factura
-from .cartera import clasificar_antiguedad
-from .nomina import calcular_nomina
-from .utils.moneda import formatear_cop
+from ventas import calcular_factura
+from cartera import clasificar_antiguedad
+from nomina import calcular_nomina
+from utils.moneda import formatear_cop
 
 BASE = Path(__file__).resolve().parent.parent
 DATA = BASE / "data"
